@@ -1,22 +1,48 @@
-<!-- pendaftaran.html -->
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Form Pendaftaran Event</title>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Event</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 30px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 300px;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 8px 15px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Form Pendaftaran Event</h1>
-  <form action="#" method="post">
-    <label>Nama:</label><br>
-    <input type="text" name="nama" required><br><br>
+    <h2>Pendaftaran Event Sekolah</h2>
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+        <label for="email">Email Aktif:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label>Nomor HP:</label><br>
-    <input type="tel" name="hp" required><br><br>
+        <label for="kelas">Kelas:</label>
+        <input type="text" id="kelas" name="kelas" required>
 
-    <button type="submit">Daftar</button>
-  </form>
+        <label for="event">Pilih Event:</label>
+        <select id="event" name="event">
+            <option value="lomba">Lomba Kebersihan</option>
+            <option value="seminar">Seminar Motivasi</option>
+            <option value="pameran">Pameran Karya Siswa</option>
+        </select>
+
+        <button type="submit">Daftar</button>
+    </form>
 </body>
 </html>
